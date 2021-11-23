@@ -1,0 +1,107 @@
+label {
+    font-size: 120%;
+}
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.message{
+    color: red;
+}
+.left-gvview {
+    border-radius: 15px;
+    font-size: 95%;
+    padding: 10px 10px;
+    margin: 4px 0;
+    border: 2px solid black;
+    cursor: pointer;
+    align-items: left;
+}
+.centerbox {
+    font-size: 95%;
+    padding: 10px 10px;
+    margin: 0 auto;
+    border: 2px solid black;
+    align-items: center;
+}
+.inputbox {
+    width: 290px;
+    font-size: 120%;
+    align-items: center;
+}
+.button {
+    font-size: 100%;
+    background-color: rgb(42, 42, 221);
+    color: white;
+    padding: 10px 10px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: 90px;
+    align-items: center;
+}
+a {
+    text-decoration: none !important;
+    color: navy;
+}
+.container-xemmhpt {
+    width: 320px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 0;
+}
+.table-dssv,.table-dssv th,.table-dssv td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table-dssv th,.table-dssv td{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.table-dssv th{
+    width: max-content; 
+    height: 20px;
+    background-color: gray;
+}
+.container-xemmhpt {
+    margin: 0 auto;
+    border-radius: 5px;
+}
+* {
+    box-sizing: border-box;
+}
+form.form-chon-hoc-ky input[type=text] {
+    padding: 10px;
+    font-size: 95%;
+    border: 1px solid grey;
+    float: center;
+    width: 60%;
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+form.form-chon-hoc-ky button {
+    float: right;
+    width: 15%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 95%;
+    border: 1px solid grey;
+    /* border-left: none;  */
+    cursor: pointer;
+    border-radius: 3px;
+}
+form.form-chon-hoc-ky button:hover {
+    background: #0b7dda;
+}
+form.form-chon-hoc-ky::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.searchbox-chon-hoc-ky {
+    font-size: 95%;
+    padding: 10px 10px;
+    margin: 0 auto;
+    border: none;
+    align-items: center;
+}

@@ -1,0 +1,59 @@
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.title{
+    font-size: 30px;
+}
+.__header-title{
+    margin-right: 770px !important;
+}
+.sayhi{
+    width: 225px;
+    color: #fff !important;
+}
+.logout{
+    margin-left: -20px;
+}
+.logout a{
+    color: #fff !important;
+}
+.logout a:hover{
+    color: #000 !important;
+}
+.slider-child{
+    margin-left: 100px;
+    height: 35px;
+}
+.slider-parent{
+    margin-bottom: 25px;
+    height: 55px;
+    border-top: 1px solid #adb5bd;
+    border-bottom: 1px solid #adb5bd;
+}
+.__nav-link{
+    color: #fff !important;
+}
+.__nav-link:hover{
+    color: #000 !important;
+}
+.__footer{
+    color: #fff !important;
+    /* background-color: #0d6efd;; */
+    height: 80px;
+    text-align: center;
+}
+.__container{
+    min-height: 550px;
+}
+#_h,#_m,#_s{
+    padding: 2px;
+}
+.count-time{
+    float: right;
+    border: 1px solid red;
+    margin: 5px 0px;
+}
+.clear{
+    clear: both;
+}
