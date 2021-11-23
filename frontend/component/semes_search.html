@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title> Trang quản lý môn học </title>
+        <link rel="icon" type="image/png" href="img/logobk.png">
+        <meta name="author" content="Pham Van Dat"/>
+        <meta name="content" content="Assignment 2"/>
+    </head>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 95%;
+            border: 1px solid grey;
+            float: center;
+            width: 60%;
+            background: #f1f1f1;
+            border-radius: 3px;
+
+        }
+        form.example button {
+            float: right;
+            width: 15%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 95%;
+            border: 1px solid grey;
+            /* border-left: none;  */
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        form.example button:hover {
+            background: #0b7dda;
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .searchbox {
+            font-size: 95%;
+            padding: 10px 10px;
+            margin: 0 auto;
+            border: none;
+            align-items: center;
+        }
+    </style>
+
+    <body>
+        <h5 align="right"> Xin chào, Phạm Văn Đạt.  
+            Nhấn vào đây để <a href="../index.html" style="font-size: normal;">quay lại trang chủ</a> hoặc 
+                            <a href="login.html" style="font-size: normal;">đăng xuất.</a>
+        </h5>
+
+        <div class="searchbox">
+            <form class="example">
+                <label> Học kỳ : </label>
+                <input type="text" placeholder="Tìm kiếm học kỳ..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </body>
+</html>
