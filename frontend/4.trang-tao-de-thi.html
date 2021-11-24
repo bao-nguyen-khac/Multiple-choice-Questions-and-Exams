@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap 5-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <!--Tiêu đề-->
+    <title>Trang tạo đề thi</title>
+</head>
+
+<body>
+    <!--HEADER: Thanh điều hướng-->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-primary">
+        <div class="container">
+            <!--LOGO-->
+            <a href="#" class="navbar-brand">
+                <img class="d-inline-block align-text-top" src="./img/logo.svg" alt="" width="30" height="24" />
+                LOGO
+            </a>
+            <!--Danh sách trang-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Trái-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Môn học</a>
+                    </li>
+                </ul>
+                <!--Phải-->
+                <ul class="navbar-nav text-right">
+                    <li class="nav-item text-right">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container p-2">
+        <!--Tạo đề thi-->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title text-center">TẠO ĐỀ THI</h5>
+            </div>
+            <div class="card-body">
+                <!--form-->
+                <form action="" method="get">
+                    <ul class="list-group list-group-flush">
+                        <div class="list-group-item">
+                            <!--Học kì-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Học kì</span>
+                                <input type="text" class="form-control" id="moTa" placeholder="Nhập học kì (VD: 212)"
+                                    name="hocKi" />
+                            </div>
+                            <!--Ngày thi-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Ngày thi</span>
+                                <input type="text" class="form-control" id="ngayThi"
+                                    placeholder="Nhập ngày thi (dd/mm/yyyy)" name="ngayThi" />
+                            </div>
+                            <!--Ngày kí xác nhận-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Ngày kí xác nhận</span>
+                                <input type="text" class="form-control" id="ngayKiXacNhan"
+                                    placeholder="Nhập ngày kí xác nhận (dd/mm/yyyy)" name="ngayKiXacNhan" />
+                            </div>
+                            <!--Số lượng câu hỏi-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Số lượng câu hỏi</span>
+                                <input type="number" step="1" class="form-control" id="soLuongCauHoi"
+                                    placeholder="Nhập số lượng câu hỏi" name="soLuongCauHoi" />
+                            </div>
+                            <!--Thời gian làm bài-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Thời gian làm bài (Phút)</span>
+                                <input type="number" step="1" class="form-control" id="thoiGianLamBai"
+                                    placeholder="Thời gian làm bài (Phút)" name="thoiGianLamBai" />
+                            </div>
+                            <!--Số lượng đề muốn tạo-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Số lượng đề</span>
+                                <input type="number" step="1" class="form-control" id="soLuongDe"
+                                    placeholder="Số lượng đề muốn tạo" name="soLuongDe" />
+                            </div>
+                        </div>
+                        <!--Tạo-->
+                        <div class="list-group-item">
+                            <button type="submit" class="btn btn-primary">Tạo đề thi</button>
+                        </div>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

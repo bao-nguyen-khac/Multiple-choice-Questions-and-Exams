@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap 5-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <!--Tiêu đề-->
+    <title>Xem đề thi chi tiết</title>
+</head>
+
+<body>
+    <!--HEADER: Thanh điều hướng-->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-primary">
+        <div class="container">
+            <!--LOGO-->
+            <a href="#" class="navbar-brand">
+                <img class="d-inline-block align-text-top" src="./img/logo.svg" alt="" width="30" height="24" />
+                LOGO
+            </a>
+            <!--Danh sách trang-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Trái-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Môn học</a>
+                    </li>
+                </ul>
+                <!--Phải-->
+                <ul class="navbar-nav text-right">
+                    <li class="nav-item text-right">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container p-2">
+        <!--Thông tin đề thi-->
+        <div class="card mt-2">
+            <div class="card-header">
+                <h5 class="card-title text-center">THÔNG TIN ĐỀ THI</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Mã đề: 123</li>
+                    <li class="list-group-item">Học kì: 191</li>
+                    <li class="list-group-item">Ngày thi: 05/09/2022</li>
+                    <li class="list-group-item">Số lượng câu hỏi: 20</li>
+                    <li class="list-group-item">Thời gian làm bài: 60 phút</li>
+                </ul>
+            </div>
+        </div>
+        <!--Câu hỏi-->
+        <div class="card mt-2">
+            <div class="card-header">
+                <h5 class="card-title">Câu 1</h5>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle">Phần mô tả...</h6>
+                <p class="card-text">
+                    Phần câu hỏi: When we went back to the bookstore, the bookseller____ the book we wanted.
+                </p>
+                <!--Phần trả lời thẻ <li> và đáp án được tô đậm bằng thẻ <h5>-->
+                <ul class="list-group list-group-flush">
+                    <h5 class="list-group-item">A. sold</h5>
+                    <li class="list-group-item">B .had sold</li>
+                    <h5 class="list-group-item">C. sells</h5>
+                    <li class="list-group-item">D.has sold</li>
+                    <h5 class="list-group-item">Đáp án: A, C</h5>
+                </ul>
+            </div>
+        </div>
+        <!--Câu hỏi-->
+        <div class="card mt-2">
+            <div class="card-header">
+                <h5 class="card-title">Câu 2</h5>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle">Phần mô tả...</h6>
+                <p class="card-text">
+                    Phần câu hỏi: When we went back to the bookstore, the bookseller____ the book we wanted.
+                </p>
+                <!--Phần trả lời thẻ <li> và đáp án được tô đậm bằng thẻ <h5>-->
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">A. sold</li>
+                    <h5 class="list-group-item">B .had sold</h5>
+                    <li class="list-group-item">C. sells</li>
+                    <li class="list-group-item">D.has sold</li>
+                    <h5 class="list-group-item">Đáp án: B</h5>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

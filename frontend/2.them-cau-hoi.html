@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap 5-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <!--Tiêu đề-->
+    <title>Thêm câu hỏi</title>
+</head>
+
+<body>
+    <!--HEADER: Thanh điều hướng-->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-primary">
+        <div class="container">
+            <!--LOGO-->
+            <a href="#" class="navbar-brand">
+                <img class="d-inline-block align-text-top" src="./img/logo.svg" alt="" width="30" height="24" />
+                LOGO
+            </a>
+            <!--Danh sách trang-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Trái-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Môn học</a>
+                    </li>
+                </ul>
+                <!--Phải-->
+                <ul class="navbar-nav text-right">
+                    <li class="nav-item text-right">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Thêm câu hỏi-->
+    <div class="container p-2">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title text-center">THÊM CÂU HỎI MỚI</h5>
+            </div>
+            <div class="card-body">
+                <form action="" method="get">
+                    <!--Trang xử lí-->
+                    <h5 class="card-title">Phần hỏi</h5>
+                    <!--Chuẩn đầu ra-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Chọn chuẩn đầu ra</span>
+                        <select class="form-select" id="chuanDauRa" name="chuanDauRa">
+                            <option value="AV1" selected>AV1</option>
+                            <option value="AV2">AV2</option>
+                            <option value="AV3">AV3</option>
+                        </select>
+                    </div>
+                    <!--Mô tả-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Phần mô tả</span>
+                        <input type="text" class="form-control" id="moTa" placeholder="Nhập nội dung mô tả" name="moTa"/>
+                    </div>
+                    <!--Câu hỏi-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Câu hỏi</span>
+                        <input type="text" class="form-control" id="cauHoi" placeholder="Nhập nội dung câu hỏi" name="cauHoi"/>
+                    </div>
+                    <!--Phần hỏi + đáp án-->
+                    <h5 class="card-title">Phần trả lời</h5>
+                    <!--Câu A-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">A</span>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" checked value="A" name="dapAn[]" />
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nội dung câu trả lời" name="cauA" />
+                    </div>
+                    <!--Câu B-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">B</span>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="B" name="dapAn[]" />
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nội dung câu trả lời" name="cauB" />
+                    </div>
+                    <!--Câu C-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">C</span>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="C" name="dapAn[]" />
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nội dung câu trả lời" name="cauC" />
+                    </div>
+                    <!--Câu D-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">D</span>
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="D" name="dapAn[]" />
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nội dung câu trả lời" name="cauD" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi</button>
+                    <button type="button" class="btn btn-primary">Đặt lại</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
