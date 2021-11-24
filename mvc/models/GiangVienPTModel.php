@@ -29,14 +29,21 @@ class GiangVienPTModel extends db{
             $this->_query($themptl);
         }
     }
-    public function xemhetcauhoi($MOHHOC_ID){
-        $cauhoisql = "SELECT * FROM cauhoi WHERE MONHOC_ID = '". $MOHHOC_ID ."'";
+    public function xemhetcauhoi($MOHHOC_ID,$page,$qty,&$checkNext){
+        $start = $page*$qty - $qty;
+        $cauhoisql = "SELECT * FROM cauhoi WHERE MONHOC_ID = '". $MOHHOC_ID ."' ORDER BY CH_ID DESC LIMIT $start, $qty ";
         $query1 = $this->_query($cauhoisql);
         $cauhois = [];
         while ($row = mysqli_fetch_assoc($query1)) {
             array_push($cauhois, $row);
         }
         $data = [];
+        $start += $qty;
+        $sql2 = "SELECT * FROM cauhoi WHERE MONHOC_ID = '". $MOHHOC_ID ."' LIMIT $start,1";
+        $query2 = $this->_query($sql2);
+        if(mysqli_num_rows($query2) == 0){
+            $checkNext = 0;
+        }
         foreach($cauhois as $cauhoi){
             $cautraloiql = "SELECT PTL_ID, PHANTRALOI, DAPAN FROM phantraloi WHERE CH_ID = ". $cauhoi['CH_ID'];
             $cauhoi['phantraloi'] = [];

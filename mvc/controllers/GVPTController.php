@@ -58,12 +58,16 @@ class GVPTController extends controller{
         }
         header("Location:".getUrl()."./GVPTController/chuyentrang/themcauhoi/".$monhoc_id);
     }
-    public function xemhetcauhoi($monhoc_id){
-        $cauhoi = $this->model("GiangVienPTModel")->xemhetcauhoi($monhoc_id);
+    public function xemhetcauhoi($monhoc_id,$page = 1){
+        $qty = 5;
+        $checkNext = 1;
+        $cauhoi = $this->model("GiangVienPTModel")->xemhetcauhoi($monhoc_id,$page,$qty,$checkNext);
         $this->view("giangvien/gvptview",[
             'page' => "xemhetcauhoi",
+            'numpage' => $page,
             'monhoc_id' => $monhoc_id,
-            'cauhois' =>  $cauhoi
+            'cauhois' =>  $cauhoi,
+            "checkNext" => $checkNext
         ]);
     }
     public function chinhsuachtemp($cauhoi_id,$monhoc_id){

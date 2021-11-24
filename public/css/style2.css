@@ -54,6 +54,14 @@
     border: 1px solid red;
     margin: 5px 0px;
 }
+.pre-page{
+    float: left;
+    padding: 10px;
+}
+.next-page{
+    float: right;
+    padding: 10px;
+}
 .clear{
     clear: both;
 }
