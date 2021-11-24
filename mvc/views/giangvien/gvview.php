@@ -30,7 +30,7 @@ if (!isset($_SESSION["gv_mscb"])) {
     <?php require_once "./mvc/views/giangvien/blocks/gvheader.php" ?> <br> <br>
     <div class="__container">
     <h1 class="left-gvview" style="top: 118px; display: block;" align="left">
-        <span> CÁC MÔN HỌC ĐANG QUẢN LÝ </span> 
+        <span> CÁC MÔN HỌC ĐANG PHỤ TRÁCH </span> 
         <hr width="100%">
         <?php foreach($monhocpt as $monhoc): ?>
         <a href="./GVPTController/xemmhPT/<?= $monhoc['MONHOC_ID'] ?>" style="font-size: large;"><?=  $monhoc['TENMH'] ?> (<?= $monhoc['MONHOC_ID'] ?>)</a><br>
@@ -39,7 +39,7 @@ if (!isset($_SESSION["gv_mscb"])) {
     <br> <br>
     
     <h1 class="left-gvview" style="top : 118px; display : block;" align="left">
-        <span> CÁC MÔN HỌC ĐANG PHỤ TRÁCH </span>
+        <span> CÁC MÔN HỌC ĐANG QUẢN LÝ </span>
         <hr width="100%">
         <?php foreach($monhocql as $monhoc): ?>
         <a href="./GVQLController/xemmhQL/<?= $monhoc['MONHOC_ID'] ?>" style="font-size: large;"><?= $monhoc['TENMH'] ?> (<?= $monhoc['MONHOC_ID'] ?>)</a> <br>

@@ -30,7 +30,7 @@ if (!isset($_SESSION["mssv"])) {
     <?php require_once "./mvc/views/sinhvien/blocks/svheader.php" ?> <br> <br>
     <div class="__container">
     <h1 class="left-gvview" style="top: 118px; display: block;" align="left">
-        <span> CÁC MÔN HỌC ĐANG HỌC </span> 
+        <span> CÁC MÔN HỌC ĐÃ VÀ ĐANG HỌC </span> 
         <hr width="100%">
         <?php foreach($monhocs as $monhoc): ?>
         <a href="./SinhVienController/xemmonhoc/<?= $monhoc['MONHOC_ID'] ?>/<?= $monhoc['HOCKY'] ?>" style="font-size: large;"><?=  $monhoc['TENMH'] ?> Học kỳ: <?= $monhoc['HOCKY'] ?></a><br>

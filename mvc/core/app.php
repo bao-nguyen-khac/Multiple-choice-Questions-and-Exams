@@ -10,6 +10,11 @@ class app{
  
         $arr = $this->UrlProcess();
         // Controller
+        if($arr[0] == 'giangvien'){
+            $this->controller = "GiangVienController";
+        }else if($arr[0] == 'sinhvien'){
+            $this->controller = "SinhVienController";
+        }
         if( file_exists("./mvc/controllers/".$arr[0].".php") ){
             $this->controller = $arr[0];
             unset($arr[0]);

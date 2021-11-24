@@ -2,6 +2,7 @@
     if($check == true){
         if($chualambai){
             echo '
+            <p style="text-align: center; display: block">Số lần làm bài cho phép: 1 </p>
             <a style="text-align: center; display: block" href="./SinhVienController/batdaulambai/'. $monhoc_id .'/'.$hocky.'">Bắt đầu làm bài</a>
             ';
         }else{
@@ -21,7 +22,4 @@
             ';
         }
     }
-    echo '
-        <a style="text-align: center; display: block" href="./SinhVienController/batdaulambai/'. $monhoc_id .'/'.$hocky.'">Bắt đầu làm bài</a>
-        ';
 ?>

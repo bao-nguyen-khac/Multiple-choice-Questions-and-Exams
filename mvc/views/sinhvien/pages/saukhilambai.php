@@ -1,2 +1,2 @@
-<h3>Điểm: <?= $diem ?></h3>
-<a href="./SinhVienController/viewHome">Về trang chủ</a>
+<h3 style="text-align: center; display: block">Điểm: <?= $diem ?></h3>
+<a style="text-align: center; display: block" href="./SinhVienController/viewHome">Về trang chủ</a>
